@@ -1,0 +1,1269 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Carpenter & Interior | Luxury Custom Woodwork & Interiors Bahawalpur</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        beige: {
+                            50: '#FAF7F2',
+                            100: '#F5EFE6', // Core logo bg tone
+                            200: '#EBDDCF',
+                            300: '#DEC6B3',
+                            400: '#C7A890',
+                            500: '#9E785A',
+                        },
+                        charcoal: {
+                            900: '#141412',
+                            800: '#1C1C19',
+                            700: '#2A2925',
+                            600: '#3D3B35',
+                        },
+                        timber: {
+                            DEFAULT: '#8C5B32',
+                            light: '#B27C4B',
+                            dark: '#68401F'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        cursive: ['"Great Vibes"', 'cursive'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5EFE6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C7A890;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8C5B32;
+        }
+
+        /* 3D Perspective and Card Tilt effect */
+        .card-3d-wrap {
+            perspective: 1000px;
+        }
+        .card-3d {
+            transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+            transform-style: preserve-3d;
+        }
+        .card-3d:hover {
+            transform: translateY(-8px) rotateX(3deg) rotateY(-2deg) scale(1.01);
+            box-shadow: 0 20px 30px -10px rgba(42, 41, 37, 0.18);
+        }
+
+        /* Floating elements animation */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+        }
+        .animate-float-slow {
+            animation: floatSlow 6s ease-in-out infinite;
+        }
+
+        /* Soft gradient overlay for images */
+        .img-gradient {
+            background: linear-gradient(180deg, rgba(20,20,18,0.05) 0%, rgba(20,20,18,0.75) 100%);
+        }
+    </style>
+</head>
+<body class="bg-beige-100 text-charcoal-800 font-sans selection:bg-timber selection:text-white antialiased overflow-x-hidden">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-charcoal-900 text-beige-100 text-xs py-2 px-4 border-b border-charcoal-700/50">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-timber text-white">
+                    <i class="fa-solid fa-gem mr-1"></i> Master Craftsmanship
+                </span>
+                <span><i class="fa-solid fa-location-dot text-timber mr-1.5"></i> Haidar Colony, State City Road, Bahawalpur</span>
+            </div>
+            <div class="flex items-center gap-4 text-[13px]">
+                <a href="tel:03029260241" class="hover:text-timber transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-xs"></i> 0302-9260241
+                </a>
+                <span class="text-charcoal-700">|</span>
+                <a href="https://wa.me/923097700239?text=Assalam-o-Alaikum%20Master%20Carpenter,%20mujhe%20interior%20work%20k%20barey%20me%20inquiry%20karni%20hai" target="_blank" class="hover:text-emerald-400 text-emerald-400 font-medium transition-colors flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp: 0309-7700239
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-beige-100/95 backdrop-blur-md border-b border-beige-300 shadow-sm transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <!-- Exact Inline SVG recreating the uploaded minimal line-art logo -->
+                <div class="w-12 h-12 flex-shrink-0 relative">
+                    <svg viewBox="0 0 100 100" class="w-full h-full text-charcoal-900 drop-shadow-sm group-hover:scale-105 transition-transform" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Roof Lines -->
+                        <path d="M 18 48 L 50 20 L 78 44" stroke-width="3.2"/>
+                        <path d="M 32 44 L 50 28 L 68 44" stroke-width="2"/>
+                        <!-- Chimney / Framing line -->
+                        <path d="M 66 26 V 42" stroke-width="2.5"/>
+                        <!-- Chisel Tool on left wall -->
+                        <rect x="30" y="46" width="6" height="12" stroke-width="2"/>
+                        <path d="M 33 58 V 74" stroke-width="2.8"/>
+                        <circle cx="33" cy="74" r="3" stroke-width="2.4" fill="currentColor"/>
+                        <!-- Arch & House Body Line -->
+                        <path d="M 24 50 V 78 L 82 78" stroke-width="3"/>
+                        <path d="M 44 78 V 56 Q 54 46 64 56 V 78" stroke-width="2.4"/>
+                        <!-- Hand Plane (Randa) Carpentry Icon on right bottom -->
+                        <path d="M 52 76 L 76 76 Q 80 72 78 66 L 74 66 L 68 56 L 64 64 L 54 68 Z" stroke-width="2.2"/>
+                        <line x1="68" y1="56" x2="60" y2="70" stroke-width="2.5"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-cursive text-2xl sm:text-3xl font-normal leading-tight text-charcoal-900 tracking-wide">Master Carpenter</span>
+                    <span class="font-serif text-[10px] sm:text-xs tracking-[0.3em] font-semibold text-charcoal-700 uppercase -mt-1">I N T E R I O R</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden xl:flex items-center space-x-6 text-xs uppercase tracking-wider font-semibold text-charcoal-700">
+                <a href="#kitchens" class="hover:text-timber transition-colors">Kitchens</a>
+                <a href="#wardrobes" class="hover:text-timber transition-colors">Wardrobes</a>
+                <a href="#doors" class="hover:text-timber transition-colors">Doors</a>
+                <a href="#mouldings" class="hover:text-timber transition-colors">Mouldings</a>
+                <a href="#media-walls" class="hover:text-timber transition-colors">Media Walls</a>
+                <a href="#bed-walls" class="hover:text-timber transition-colors">Bed Walls</a>
+                <a href="#furniture" class="hover:text-timber transition-colors">Furniture</a>
+                <a href="#office" class="hover:text-timber transition-colors">Office</a>
+                <a href="#renewing" class="hover:text-timber transition-colors">Restoration</a>
+            </nav>
+
+            <!-- Action CTAs -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:03029260241" class="px-4 py-2 border border-charcoal-900 rounded-full text-xs font-semibold tracking-wider uppercase text-charcoal-900 hover:bg-charcoal-900 hover:text-beige-100 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call
+                </a>
+                <a href="https://wa.me/923097700239?text=Assalam-o-Alaikum%20Master%20Carpenter,%20mujhe%20interior%20designing%20aur%20woodwork%20ke%20lie%20quotation%20chahiye" target="_blank" class="px-4 py-2 bg-charcoal-900 text-beige-100 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-timber transition-all shadow-md flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i> WhatsApp Quote
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="mobileMenuBtn" aria-label="Toggle Menu" class="xl:hidden text-charcoal-900 text-2xl p-2 focus:outline-none">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-beige-50 border-b border-beige-300 px-6 py-5 space-y-3 shadow-lg">
+            <div class="grid grid-cols-2 gap-3 text-xs uppercase font-semibold tracking-wider">
+                <a href="#kitchens" class="mobile-link py-2 border-b border-beige-200">Kitchens</a>
+                <a href="#wardrobes" class="mobile-link py-2 border-b border-beige-200">Wardrobes</a>
+                <a href="#doors" class="mobile-link py-2 border-b border-beige-200">Doors</a>
+                <a href="#mouldings" class="mobile-link py-2 border-b border-beige-200">Mouldings</a>
+                <a href="#media-walls" class="mobile-link py-2 border-b border-beige-200">Media Walls</a>
+                <a href="#bed-walls" class="mobile-link py-2 border-b border-beige-200">Bed Walls</a>
+                <a href="#furniture" class="mobile-link py-2 border-b border-beige-200">Furniture</a>
+                <a href="#office" class="mobile-link py-2 border-b border-beige-200">Office</a>
+                <a href="#renewing" class="mobile-link py-2 border-b border-beige-200">Restoration</a>
+                <a href="#reviews" class="mobile-link py-2 border-b border-beige-200">Reviews (4.9★)</a>
+            </div>
+            <div class="pt-3 flex flex-col gap-2">
+                <a href="tel:03029260241" class="w-full text-center py-2.5 rounded-lg border border-charcoal-800 text-xs uppercase tracking-wider font-bold">
+                    <i class="fa-solid fa-phone mr-2"></i> 0302-9260241
+                </a>
+                <a href="https://wa.me/923097700239" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-charcoal-900 text-beige-100 text-xs uppercase tracking-wider font-bold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> WhatsApp 0309-7700239
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with 3D Visual Accents -->
+    <section class="relative pt-12 pb-20 md:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Details -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-beige-200/80 border border-beige-300 px-3.5 py-1.5 rounded-full text-xs font-semibold text-charcoal-800">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
+                        <span>Direct Workshop & Interior Studio in Bahawalpur</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif text-charcoal-900 leading-[1.15]">
+                        Crafting Timeless <br>
+                        <span class="font-cursive text-5xl sm:text-6xl lg:text-7xl text-timber font-normal block mt-1">Wooden Elegance</span>
+                        For Royal Living.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-charcoal-600 max-w-xl font-light leading-relaxed">
+                        From custom solid wood modular kitchens, deco finish closets, executive office consoles to complete luxury interior transformations. Tailored with unmatched precision in Bahawalpur.
+                    </p>
+
+                    <!-- Trust Stats & Badges -->
+                    <div class="flex flex-wrap items-center gap-6 pt-2">
+                        <div class="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-2xl border border-beige-300 shadow-sm">
+                            <div class="flex text-amber-500 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <span class="text-xs font-bold text-charcoal-900">4.9 / 5.0 Rating</span>
+                            <span class="text-[10px] text-charcoal-600">(180+ Homes Done)</span>
+                        </div>
+                        <div class="text-xs font-medium text-charcoal-600 flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-timber"></i> Premium Grade Seasoned Wood & UV Acrylics
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap items-center gap-4 pt-4">
+                        <a href="#kitchens" class="px-7 py-3.5 bg-charcoal-900 text-beige-100 rounded-full font-semibold text-xs tracking-wider uppercase hover:bg-timber transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            Explore Collections <i class="fa-solid fa-arrow-right-long ml-2"></i>
+                        </a>
+                        <a href="https://wa.me/923097700239?text=Assalam-o-Alaikum%20Master%20Carpenter,%20mujhe%20apne%20ghar%20k%20interior%20k%20lie%20estimate%20chahiye" target="_blank" class="px-7 py-3.5 bg-emerald-700 text-white rounded-full font-semibold text-xs tracking-wider uppercase hover:bg-emerald-800 transition-all shadow-md flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Direct Consultation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right 3D Visual Collage -->
+                <div class="lg:col-span-5 relative">
+                    <div class="card-3d-wrap relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -top-4 -left-4 z-20 bg-charcoal-900 text-beige-100 p-4 rounded-2xl shadow-2xl border border-charcoal-700 animate-float-slow hidden sm:block">
+                            <p class="text-[10px] uppercase font-bold tracking-widest text-beige-300">Master Finishes</p>
+                            <p class="font-serif text-lg font-bold text-amber-400">Deco • Polish • UV</p>
+                            <p class="text-[10px] text-beige-300 mt-1">100% Guaranteed Durability</p>
+                        </div>
+
+                        <!-- 3D Card Main Image -->
+                        <div class="card-3d rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 relative">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Master Carpenter Luxury Interior" class="w-full h-[450px] object-cover">
+                            <div class="absolute inset-0 img-gradient flex flex-col justify-end p-6 text-white">
+                                <span class="text-xs uppercase tracking-widest text-amber-300 font-bold">Featured Bahawalpur Project</span>
+                                <h3 class="font-serif text-2xl font-bold mt-1">Custom Fluted Media & Kitchen Work</h3>
+                                <p class="text-xs text-beige-200 mt-1">Haidar Colony, State City Road</p>
+                            </div>
+                        </div>
+
+                        <!-- Mini Floating Card -->
+                        <div class="absolute -bottom-6 -right-4 z-20 bg-beige-50/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-beige-300 max-w-[220px]">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-timber/20 flex items-center justify-center text-timber font-bold text-lg">
+                                    <i class="fa-solid fa-compass-drafting"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-charcoal-900">Custom Sizing</p>
+                                    <p class="text-[11px] text-charcoal-600">On-site measurement & 3D planning</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Collections Directory -->
+    <section class="py-8 bg-beige-200/60 border-y border-beige-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between gap-4 overflow-x-auto pb-2 scrollbar-none text-xs font-semibold uppercase tracking-wider text-charcoal-700">
+                <span class="text-timber flex items-center gap-1.5 whitespace-nowrap"><i class="fa-solid fa-layer-group"></i> Quick Jumps:</span>
+                <a href="#kitchens" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">1. Kitchens</a>
+                <a href="#wardrobes" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">2. Wardrobes</a>
+                <a href="#doors" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">3. Doors</a>
+                <a href="#mouldings" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">4. Mouldings</a>
+                <a href="#media-walls" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">5. Media Walls</a>
+                <a href="#bed-walls" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">6. Bed Walls</a>
+                <a href="#furniture" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">7. Furniture</a>
+                <a href="#office" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">8. Office</a>
+                <a href="#renewing" class="px-3 py-1.5 rounded-full bg-white/70 hover:bg-charcoal-900 hover:text-white transition whitespace-nowrap">9. Maintenance & Polish</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: KITCHEN COLLECTION (First Collection as requested) -->
+    <section id="kitchens" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">Prime Master Collection</span>
+            <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Luxury Kitchens & Modern Cabinetry</h2>
+            <div class="w-16 h-0.5 bg-timber mx-auto my-4"></div>
+            <p class="text-charcoal-600 text-sm sm:text-base">
+                Solid wood, modular acrylic, deco finish, high-gloss UV laminate, and natural polish kitchens engineered for high heat, steam resistance, and lifetime durability.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Kitchen 1: Solid Wood Kitchen -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 flex flex-col group shadow-sm">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Solid Wood Kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-charcoal-900/90 text-beige-100 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Solid Wood</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Pure Ash & Teak Solid Kitchen</h3>
+                        <p class="text-xs text-charcoal-600 mt-2 leading-relaxed">
+                            Hand-carved panels, classic raised shutters, natural grain visible under moisture-proof lacquer.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">Solid Timber</span>
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">Anti-Termite</span>
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">Polyurethane Seal</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/923097700239?text=Salam,%20mujhe%20Solid%20Wood%20Kitchen%20ki%20details%20aur%20cost%20per%20sqft%20maloom%20karni%20hai" target="_blank" class="w-full py-2.5 rounded-xl bg-beige-100 hover:bg-charcoal-900 hover:text-white text-charcoal-900 text-xs font-bold text-center transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600"></i> Get Estimate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kitchen 2: Modular Deco Finish -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 flex flex-col group shadow-sm">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" alt="Deco Finish Kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Deco Paint Finish</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Bespoke Matte Deco Kitchen</h3>
+                        <p class="text-xs text-charcoal-600 mt-2 leading-relaxed">
+                            Ultra-smooth automobile grade deco spray finish in warm cream, sage, charcoal, and cashmere shades.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">Seamless Spray</span>
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">Scratch Resistant</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/923097700239?text=Salam,%20mujhe%20Matte%20Deco%20Kitchen%20ka%20rate%20chahiye" target="_blank" class="w-full py-2.5 rounded-xl bg-beige-100 hover:bg-charcoal-900 hover:text-white text-charcoal-900 text-xs font-bold text-center transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600"></i> Get Estimate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kitchen 3: High Gloss UV Acrylic -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 flex flex-col group shadow-sm">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=800&q=80" alt="High Gloss UV Sheet Kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-charcoal-900/90 text-beige-100 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">High Gloss UV</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Mirror UV & Acrylic Modular</h3>
+                        <p class="text-xs text-charcoal-600 mt-2 leading-relaxed">
+                            Imported high-pressure UV acrylic sheets with aluminium edge-banding. Waterproof and stain-free cleaning.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">UV Glass Glow</span>
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">Soft Close German Hardware</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/923097700239?text=Salam,%20mujhe%20UV%20Acrylic%20Kitchen%20ki%20quotation%20chahiye" target="_blank" class="w-full py-2.5 rounded-xl bg-beige-100 hover:bg-charcoal-900 hover:text-white text-charcoal-900 text-xs font-bold text-center transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600"></i> Get Estimate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kitchen 4: Polish & Stained Wood / Texture Laminate -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 flex flex-col group shadow-sm">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Veneer Polish Kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-3 left-3 bg-timber text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Polish & Veneer</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Stained Oak & Textured Laminate</h3>
+                        <p class="text-xs text-charcoal-600 mt-2 leading-relaxed">
+                            Deep walnut stain with Italian matte polish, synchronized woodgrain tactile laminates, and built-in quartz counter pairing.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">Natural Veneer</span>
+                            <span class="text-[10px] bg-beige-100 px-2 py-0.5 rounded text-charcoal-700">Walnut / Oak</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Polish%20and%20Veneer%20Kitchen%20k%20options%20send%20karein" target="_blank" class="w-full py-2.5 rounded-xl bg-beige-100 hover:bg-charcoal-900 hover:text-white text-charcoal-900 text-xs font-bold text-center transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600"></i> Get Estimate
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: WARDROBES COLLECTION -->
+    <section id="wardrobes" class="py-20 bg-beige-200/50 border-t border-beige-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">Architectural Storage</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Custom Luxury Wardrobes</h2>
+                    <p class="text-charcoal-600 text-sm mt-2 max-w-xl">
+                        Floor-to-ceiling built-ins, tinted glass profile wardrobes with concealed warm LED channels, and solid carved master almirahs.
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <span class="text-xs font-semibold px-3 py-1.5 bg-white rounded-full border border-beige-300 text-charcoal-700">
+                        <i class="fa-solid fa-sliders text-timber mr-1"></i> Custom Organizers & Sensor Lights
+                    </span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Wardrobe 1: Glass Profile & LED -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=800&q=80" alt="Walk-in Glass Wardrobe" class="h-64 w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="font-serif text-lg font-bold text-charcoal-900">Fluted / Tinted Glass Profile</h3>
+                                <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">Modern Ultra</span>
+                            </div>
+                            <p class="text-xs text-charcoal-600 leading-relaxed">
+                                Black aluminium slim profiles, tempered smoked glass, embedded sensor LED lights, velvet jewellery trays, and sliding soft-close racks.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/923097700239?text=Salam,%20mujhe%20Glass%20Profile%20Wardrobe%20ka%20design%20banwana%20hai" target="_blank" class="mt-4 w-full py-2.5 rounded-xl border border-charcoal-900 text-charcoal-900 text-xs font-bold text-center hover:bg-charcoal-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-600"></i> Consult Wardrobe Architect
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Wardrobe 2: Deco Matte Finish -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Deco Finish Wardrobe" class="h-64 w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="font-serif text-lg font-bold text-charcoal-900">Floor-to-Ceiling Deco Finish</h3>
+                                <span class="text-[11px] font-bold text-timber bg-beige-100 px-2 py-0.5 rounded">Classic Minimal</span>
+                            </div>
+                            <p class="text-xs text-charcoal-600 leading-relaxed">
+                                Seamless vertical lines, invisible push-to-open or designer brass handles, matching internal vanity and coat organizers.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/923097700239?text=Salam,%20Deco%20Finish%20Wardrobe%20k%20options%20aur%20cost%20bataiye" target="_blank" class="mt-4 w-full py-2.5 rounded-xl border border-charcoal-900 text-charcoal-900 text-xs font-bold text-center hover:bg-charcoal-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-600"></i> Consult Wardrobe Architect
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Wardrobe 3: Solid Wood & UV Laminate -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" alt="Solid Wood Wardrobe" class="h-64 w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="font-serif text-lg font-bold text-charcoal-900">Solid Ash & UV Sliding Doors</h3>
+                                <span class="text-[11px] font-bold text-charcoal-800 bg-beige-200 px-2 py-0.5 rounded">Heavy Duty</span>
+                            </div>
+                            <p class="text-xs text-charcoal-600 leading-relaxed">
+                                Heavy sliding German top-hung runners, high-gloss UV textured panels, deep solid wooden drawers with safety locks.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/923097700239?text=Salam,%20Sliding%20Door%20UV%20Wardrobe%20ki%20inquiry%20karni%20hai" target="_blank" class="mt-4 w-full py-2.5 rounded-xl border border-charcoal-900 text-charcoal-900 text-xs font-bold text-center hover:bg-charcoal-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-600"></i> Consult Wardrobe Architect
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: DOORS SECTION -->
+    <section id="doors" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">First Impressions</span>
+            <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Master Engineered & Solid Wood Doors</h2>
+            <div class="w-16 h-0.5 bg-timber mx-auto my-4"></div>
+            <p class="text-charcoal-600 text-sm sm:text-base">
+                Grand entrance double doors, solid Ash/Teak, semi-solid grooved doors, and 100% waterproof bathroom doors crafted for lasting stability.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Door 1 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 p-4 shadow-sm flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=800&q=80" alt="Main Entrance Solid Teak Door" class="h-60 w-full object-cover rounded-xl mb-4">
+                    <h3 class="font-serif text-lg font-bold text-charcoal-900">Grand Entrance Double Doors</h3>
+                    <p class="text-xs text-charcoal-600 mt-2">
+                        Solid 2-inch seasoned Teak or Ash wood, heavy pivot/brass hinges, digital smart lock compatibility, hand-carved trims.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-beige-200 flex justify-between items-center">
+                    <span class="text-[11px] font-bold text-timber">Solid Seasoned Wood</span>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Main%20Double%20Door%20k%20options%20aur%20rates%20chahiye" class="text-xs font-bold text-charcoal-900 hover:text-timber">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+            </div>
+
+            <!-- Door 2 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 p-4 shadow-sm flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Semi Solid Interior Door" class="h-60 w-full object-cover rounded-xl mb-4">
+                    <h3 class="font-serif text-lg font-bold text-charcoal-900">Semi-Solid Grooved Flush Doors</h3>
+                    <p class="text-xs text-charcoal-600 mt-2">
+                        HDF skins, CNC precise v-groove modern patterns, finished in luxury PU polish or matte white deco paint.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-beige-200 flex justify-between items-center">
+                    <span class="text-[11px] font-bold text-timber">Room & Bedroom Range</span>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Semi-solid%20Room%20Doors%20ki%20inquiry%20karni%20hai" class="text-xs font-bold text-charcoal-900 hover:text-timber">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+            </div>
+
+            <!-- Door 3 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 p-4 shadow-sm flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=800&q=80" alt="Waterproof Bathroom Door" class="h-60 w-full object-cover rounded-xl mb-4">
+                    <h3 class="font-serif text-lg font-bold text-charcoal-900">Waterproof PVC/HDF Washroom Doors</h3>
+                    <p class="text-xs text-charcoal-600 mt-2">
+                        Moisture-sealed internal core with exterior matching woodgrain veneer or deco coat. Zero swelling guarantee.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-beige-200 flex justify-between items-center">
+                    <span class="text-[11px] font-bold text-timber">100% Water Resistant</span>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Waterproof%20Bathroom%20Doors%20ki%20details%20chahiye" class="text-xs font-bold text-charcoal-900 hover:text-timber">Inquire <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: MOULDINGS SECTION -->
+    <section id="mouldings" class="py-20 bg-beige-200/50 border-t border-beige-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block">Architectural Detailing</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Wall Mouldings, French Wainscoting & Fluted Louvers</h2>
+                    <p class="text-charcoal-600 text-sm leading-relaxed">
+                        Upgrade plain walls into palatial estates. We machine and install custom hardwood skirting, crown cornices, Victorian wainscoting frames, and contemporary vertical acoustic louvers.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-charcoal-700 pt-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber"></i> High-density wood & HDMR precision mouldings</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber"></i> Perfectly mitered corners and seamless joints</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-timber"></i> Ready for duo-tone wall paint or gold-leaf accents</li>
+                    </ul>
+                    <div class="pt-2">
+                        <a href="https://wa.me/923097700239?text=Salam,%20Wall%20Mouldings%20aur%20Wainscoting%20k%20options%20chahiye" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-charcoal-900 text-beige-100 text-xs uppercase font-bold tracking-wider hover:bg-timber transition">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i> Book Moulding Measurement
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="card-3d rounded-2xl overflow-hidden border border-beige-300 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80" alt="Wall Wainscoting Moulding" class="h-64 w-full object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-serif font-bold text-sm text-charcoal-900">French Box Moulding & Beading</h4>
+                            <p class="text-[11px] text-charcoal-600 mt-1">Symmetrical drawing room & foyer accents.</p>
+                        </div>
+                    </div>
+                    <div class="card-3d rounded-2xl overflow-hidden border border-beige-300 shadow-sm sm:mt-8">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Fluted Wooden Louver Slats" class="h-64 w-full object-cover">
+                        <div class="p-4 bg-white">
+                            <h4 class="font-serif font-bold text-sm text-charcoal-900">Solid Fluted Wooden Slats</h4>
+                            <p class="text-[11px] text-charcoal-600 mt-1">Natural teak & charcoal grey acoustic slats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: MEDIA WALLS COLLECTION -->
+    <section id="media-walls" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">Living Room Centerpieces</span>
+            <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Designer Media Walls & TV Units</h2>
+            <div class="w-16 h-0.5 bg-timber mx-auto my-4"></div>
+            <p class="text-charcoal-600 text-sm sm:text-base">
+                Seamless combinations of fluted panels, backlit imported porcelain/marble sheets, floating consoles, and electric fireplace integrations.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Media Wall 1 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm flex flex-col">
+                <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80" alt="Marble and Fluted Media Wall" class="h-60 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Backlit Marble & Slat Panel Unit</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">
+                            High-gloss marble UV sheet center with warm cove lighting surrounded by custom dark walnut fluted vertical louvers.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/923097700239?text=Salam,%20mujhe%20Backlit%20Marble%20Media%20Wall%20ka%20rate%20chahiye" target="_blank" class="mt-4 w-full py-2 bg-beige-100 hover:bg-charcoal-900 hover:text-white rounded-lg text-xs font-bold text-center transition">
+                        Order Custom Size
+                    </a>
+                </div>
+            </div>
+
+            <!-- Media Wall 2 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm flex flex-col">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Floating Minimalist Media Wall" class="h-60 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Floating Storage Minimal Console</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">
+                            Ultra-slim floating credenza with integrated wire concealers, soft-touch drop down doors, and soundbar alcoves.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Floating%20Minimal%20Media%20Wall%20ki%20details%20bataiye" target="_blank" class="mt-4 w-full py-2 bg-beige-100 hover:bg-charcoal-900 hover:text-white rounded-lg text-xs font-bold text-center transition">
+                        Order Custom Size
+                    </a>
+                </div>
+            </div>
+
+            <!-- Media Wall 3 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm flex flex-col">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="Fireplace Integrated Media Wall" class="h-60 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Fireplace Integrated Luxury Wall</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">
+                            Recessed space for LED flame electric fireplace, tempered safety glass, and deco panel shelving for artefacts.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Fireplace%20Media%20Wall%20design%20aur%20cost%20chahiye" target="_blank" class="mt-4 w-full py-2 bg-beige-100 hover:bg-charcoal-900 hover:text-white rounded-lg text-xs font-bold text-center transition">
+                        Order Custom Size
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: BED WALLS COLLECTION -->
+    <section id="bed-walls" class="py-20 bg-beige-200/50 border-t border-beige-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">Master Suite Luxury</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Feature Bed Back Walls</h2>
+                    <p class="text-charcoal-600 text-sm mt-2 max-w-xl">
+                        Turn your bedroom into a 7-star resort suite with custom upholstered wall paneling, vertical wooden ribbing, and metallic profile inlays.
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <span class="text-xs font-bold text-timber bg-white px-3 py-1.5 rounded-full border border-beige-300">
+                        <i class="fa-solid fa-moon mr-1"></i> Integrated Bedside Controls & Warm Glow
+                    </span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Bed Wall 1 -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80" alt="Upholstered Bed Wall" class="h-60 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Velvet Cushion & Brass Inlay</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">High-density foam upholstered panels wrapped in stain-guarded velvet with brushed gold trims.</p>
+                        <a href="https://wa.me/923097700239?text=Salam,%20Velvet%20Cushion%20Bed%20Wall%20ka%20rate%20bataiye" class="mt-4 inline-block text-xs font-bold text-charcoal-900 hover:text-timber">Inquire on WhatsApp →</a>
+                    </div>
+                </div>
+
+                <!-- Bed Wall 2 -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4550?auto=format&fit=crop&w=800&q=80" alt="Fluted Wood Bed Back Wall" class="h-60 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Full-Span Fluted Timber Wall</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">Floor-to-ceiling solid Ash wood battens with hidden wiring for bedside pendant drop lights.</p>
+                        <a href="https://wa.me/923097700239?text=Salam,%20Fluted%20Timber%20Bed%20Back%20Wall%20chahiye" class="mt-4 inline-block text-xs font-bold text-charcoal-900 hover:text-timber">Inquire on WhatsApp →</a>
+                    </div>
+                </div>
+
+                <!-- Bed Wall 3 -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Geometric Veneer Bed Back Wall" class="h-60 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Geometric Natural Veneer Pattern</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">Diamond-matched walnut and oak natural veneers finished in Italian silky smooth matte varnish.</p>
+                        <a href="https://wa.me/923097700239?text=Salam,%20Geometric%20Veneer%20Bed%20Wall%20ki%20details%20send%20karein" class="mt-4 inline-block text-xs font-bold text-charcoal-900 hover:text-timber">Inquire on WhatsApp →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: FURNITURE COLLECTION -->
+    <section id="furniture" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">Bespoke Furniture</span>
+            <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Custom Solid Living & Dining Furniture</h2>
+            <div class="w-16 h-0.5 bg-timber mx-auto my-4"></div>
+            <p class="text-charcoal-600 text-sm sm:text-base">
+                Tailor-made sofas, dining suites, ergonomic accent coffee tables, luxury master beds, and console tables handcrafted by senior master carpenters.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Furniture 1 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm p-4">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Custom Luxury Sofa" class="h-48 w-full object-cover rounded-xl mb-3">
+                <h4 class="font-serif font-bold text-base text-charcoal-900">Custom Luxury Sofas</h4>
+                <p class="text-xs text-charcoal-600 mt-1">High-density Molty/Master foam, solid Kikar inner frame, premium imported velvet & textured upholstery.</p>
+                <div class="mt-3 flex justify-between items-center text-xs">
+                    <span class="font-bold text-timber">10 Yrs Frame Life</span>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Custom%20Sofa%20Set%20banwana%20hai" class="font-bold text-charcoal-900 hover:text-timber"><i class="fa-brands fa-whatsapp text-emerald-600"></i> Order</a>
+                </div>
+            </div>
+
+            <!-- Furniture 2 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm p-4">
+                <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=700&q=80" alt="Solid Wood Dining Table" class="h-48 w-full object-cover rounded-xl mb-3">
+                <h4 class="font-serif font-bold text-base text-charcoal-900">Solid Teak Dining Sets</h4>
+                <p class="text-xs text-charcoal-600 mt-1">6, 8, or 10-seater heavy solid wood tables with cushioned ergonomic chairs and heat-proof finish.</p>
+                <div class="mt-3 flex justify-between items-center text-xs">
+                    <span class="font-bold text-timber">Custom Wood Tone</span>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Dining%20Table%20Set%20k%20options%20chahiye" class="font-bold text-charcoal-900 hover:text-timber"><i class="fa-brands fa-whatsapp text-emerald-600"></i> Order</a>
+                </div>
+            </div>
+
+            <!-- Furniture 3 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm p-4">
+                <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=700&q=80" alt="Master Bed Set" class="h-48 w-full object-cover rounded-xl mb-3">
+                <h4 class="font-serif font-bold text-base text-charcoal-900">King Size Master Bed Sets</h4>
+                <p class="text-xs text-charcoal-600 mt-1">Complete set with hydraulic storage bed base, 2 bedside tables, and a full mirror dressing unit.</p>
+                <div class="mt-3 flex justify-between items-center text-xs">
+                    <span class="font-bold text-timber">Master Bedroom Set</span>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Master%20Bed%20set%20ki%20details%20chahiye" class="font-bold text-charcoal-900 hover:text-timber"><i class="fa-brands fa-whatsapp text-emerald-600"></i> Order</a>
+                </div>
+            </div>
+
+            <!-- Furniture 4 -->
+            <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm p-4">
+                <img src="https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?auto=format&fit=crop&w=700&q=80" alt="Center Tables and Coffee Consoles" class="h-48 w-full object-cover rounded-xl mb-3">
+                <h4 class="font-serif font-bold text-base text-charcoal-900">Centre & Accent Tables</h4>
+                <p class="text-xs text-charcoal-600 mt-1">Nesting coffee tables with natural marble tops, solid tapered wooden fluted legs, and brass socks.</p>
+                <div class="mt-3 flex justify-between items-center text-xs">
+                    <span class="font-bold text-timber">Artisan Crafted</span>
+                    <a href="https://wa.me/923097700239?text=Salam,%20Centre%20Table%20k%20designs%20chahiye" class="font-bold text-charcoal-900 hover:text-timber"><i class="fa-brands fa-whatsapp text-emerald-600"></i> Order</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: OFFICE COLLECTION -->
+    <section id="office" class="py-20 bg-beige-200/50 border-t border-beige-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">Corporate & Executive</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Executive Office Furniture & Fit-outs</h2>
+                    <p class="text-charcoal-600 text-sm mt-2 max-w-xl">
+                        Director tables, modular workstations, boardroom conference tables, and confidential file credenzas engineered for high productivity.
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <span class="text-xs font-bold text-charcoal-800 bg-white px-3 py-1.5 rounded-full border border-beige-300">
+                        <i class="fa-solid fa-briefcase text-timber mr-1"></i> Turnkey Corporate Bahawalpur Projects
+                    </span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Office 1 -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Executive Director Desk" class="h-60 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Executive Director Desks</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">Grand L-shaped desk with leather pad inlays, concealed cable management, and side storage runner.</p>
+                        <a href="https://wa.me/923097700239?text=Salam,%20Executive%20Director%20Office%20Desk%20chahiye" class="mt-4 inline-block text-xs font-bold text-charcoal-900 hover:text-timber">Request Corporate Catalog →</a>
+                    </div>
+                </div>
+
+                <!-- Office 2 -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Conference Meeting Table" class="h-60 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Conference & Boardroom Tables</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">10 to 20-person heavy veneer conference tables with pop-up power sockets and microphone integration.</p>
+                        <a href="https://wa.me/923097700239?text=Salam,%20Conference%20Room%20Table%20banwana%20hai" class="mt-4 inline-block text-xs font-bold text-charcoal-900 hover:text-timber">Request Corporate Catalog →</a>
+                    </div>
+                </div>
+
+                <!-- Office 3 -->
+                <div class="card-3d bg-white rounded-2xl overflow-hidden border border-beige-300 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" alt="Office Workstations Pods" class="h-60 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-serif text-lg font-bold text-charcoal-900">Workstation Pods & File Storage</h3>
+                        <p class="text-xs text-charcoal-600 mt-2">Space-saving team cubicles with pin-boards, tempered glass dividers, and central filing cabinets.</p>
+                        <a href="https://wa.me/923097700239?text=Salam,%20Office%20Workstation%20setup%20ki%20quotation%20chahiye" class="mt-4 inline-block text-xs font-bold text-charcoal-900 hover:text-timber">Request Corporate Catalog →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: MAINTENANCE AND RENEWING COLLECTION -->
+    <section id="renewing" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">Wood Care & Revival</span>
+            <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">Maintenance, Repair & Renewing Services</h2>
+            <div class="w-16 h-0.5 bg-timber mx-auto my-4"></div>
+            <p class="text-charcoal-600 text-sm sm:text-base">
+                Do not throw away your ancestral solid wood furniture. Our master team restores, re-polishes, repaints, and treats termite damage to brand-new condition.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Renew 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-beige-300 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-beige-200 flex items-center justify-center text-timber text-xl mb-4">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <h3 class="font-serif text-base font-bold text-charcoal-900">Deco & Polish Recoating</h3>
+                    <p class="text-xs text-charcoal-600 mt-2">
+                        Complete sand-down, pore filling, color matching, and multi-coat high-durability PU lacquer or matte finish.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-beige-200 text-xs font-bold text-charcoal-800">
+                    Doorstep Assessment in Bahawalpur
+                </div>
+            </div>
+
+            <!-- Renew 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-beige-300 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-beige-200 flex items-center justify-center text-timber text-xl mb-4">
+                        <i class="fa-solid fa-bug"></i>
+                    </div>
+                    <h3 class="font-serif text-base font-bold text-charcoal-900">Termite Restoration</h3>
+                    <p class="text-xs text-charcoal-600 mt-2">
+                        Chemical anti-termite wood treatment, structural wood core replacement, and deep anti-rot strengthening.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-beige-200 text-xs font-bold text-charcoal-800">
+                    Chemical Deep Treatment
+                </div>
+            </div>
+
+            <!-- Renew 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-beige-300 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-beige-200 flex items-center justify-center text-timber text-xl mb-4">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="font-serif text-base font-bold text-charcoal-900">Hardware & Hinge Upgrade</h3>
+                    <p class="text-xs text-charcoal-600 mt-2">
+                        Replacement of noisy or rusted kitchen hinges, drawer channels with smooth hydraulic soft-closing systems.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-beige-200 text-xs font-bold text-charcoal-800">
+                    German Soft-Close Fittings
+                </div>
+            </div>
+
+            <!-- Renew 4 -->
+            <div class="bg-white p-6 rounded-2xl border border-beige-300 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-beige-200 flex items-center justify-center text-timber text-xl mb-4">
+                        <i class="fa-solid fa-house-chimney-crack"></i>
+                    </div>
+                    <h3 class="font-serif text-base font-bold text-charcoal-900">Kitchen Refresh & Repaint</h3>
+                    <p class="text-xs text-charcoal-600 mt-2">
+                        Update dull kitchen cabinet shutters to trending sage green, matte black, or pure white deco without redoing the entire carcass.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-beige-200 text-xs font-bold text-charcoal-800">
+                    50% Budget Savings
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="https://wa.me/923097700239?text=Salam,%20mujhe%20apne%20furniture%20ya%20kitchen%20ki%20repair%20aur%20polish%20karwani%20hai" target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-charcoal-900 text-beige-100 text-xs uppercase font-bold tracking-wider hover:bg-timber transition shadow-md">
+                <i class="fa-solid fa-wrench"></i> Book A Restoration Carpenter
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 10: CUSTOMER REVIEWS (4.5+ Verified Ratings) -->
+    <section id="reviews" class="py-20 bg-white border-t border-beige-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full text-xs font-bold text-amber-800 mb-3">
+                    <span class="flex text-amber-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <span>4.9 Star Verified Client Feedback</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-serif text-charcoal-900">What Our Clients Say</h2>
+                <div class="w-16 h-0.5 bg-timber mx-auto my-4"></div>
+                <p class="text-charcoal-600 text-sm">
+                    Homeowners and architects across Bahawalpur trust Master Carpenter and Interior for fine detailing and on-time completion.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-beige-100/70 p-6 rounded-2xl border border-beige-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-charcoal-700 italic leading-relaxed">
+                            "Bahawalpur me aisi finish pehli dafa dekhi hai. Kitchen deco finish aur wardrobes ka kaam zabardast kiya hai. Waqt pe complete kiya aur wood quality 100% genuine hai."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-4 border-t border-beige-300/80">
+                        <div class="w-10 h-10 rounded-full bg-timber text-white font-bold flex items-center justify-center text-sm font-serif">
+                            MA
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-charcoal-900">Malik Asad</h4>
+                            <p class="text-[10px] text-charcoal-600">Model Town A, Bahawalpur (Full Kitchen & Wardrobe)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-beige-100/70 p-6 rounded-2xl border border-beige-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-charcoal-700 italic leading-relaxed">
+                            "Haidar Colony workshop me khud ja k visit kiya tha. Unki media wall aur bed back paneling ki craft bemisaal hai. Fluted louvers ki alignment bilkul zero error hai."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-4 border-t border-beige-300/80">
+                        <div class="w-10 h-10 rounded-full bg-charcoal-900 text-white font-bold flex items-center justify-center text-sm font-serif">
+                            TH
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-charcoal-900">Tariq Hashmi</h4>
+                            <p class="text-[10px] text-charcoal-600">State City Road, Bahawalpur (Media Wall & Doors)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-beige-100/70 p-6 rounded-2xl border border-beige-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-500 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="text-xs text-charcoal-700 italic leading-relaxed">
+                            "Puraane Teak wood dining table aur drawing room doors ko bilkul new showroom jesa polish kar k diya. Rates bohat munasib hain aur staff boht professional hai."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-4 border-t border-beige-300/80">
+                        <div class="w-10 h-10 rounded-full bg-timber-dark text-white font-bold flex items-center justify-center text-sm font-serif">
+                            RS
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-charcoal-900">Rana Salman</h4>
+                            <p class="text-[10px] text-charcoal-600">Cheema Town, Bahawalpur (Restoration & Polish)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: LOCATION, INTERACTIVE INQUIRY & CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-beige-100 border-t border-beige-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Workshop Details & Map Area -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-timber uppercase tracking-[0.25em] text-xs font-bold block mb-2">Visit Our Workshop</span>
+                        <h2 class="text-3xl font-serif text-charcoal-900">Master Carpenter & Interior</h2>
+                        <p class="text-xs text-charcoal-600 mt-2">
+                            Aap workshop visit kar ke materials, UV sheets, polish samples aur wood seasoning live check kar sakte hain.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 text-xs font-medium text-charcoal-800">
+                        <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-beige-300 shadow-sm">
+                            <i class="fa-solid fa-location-dot text-timber text-base mt-0.5"></i>
+                            <div>
+                                <strong class="block text-charcoal-900 font-bold">Workshop & Studio Address:</strong>
+                                Haidar Colony, State City Road, Bahawalpur, Punjab, Pakistan.
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-white p-3.5 rounded-xl border border-beige-300 shadow-sm">
+                            <i class="fa-solid fa-phone text-timber text-base"></i>
+                            <div>
+                                <strong class="block text-charcoal-900 font-bold">Calling Number:</strong>
+                                <a href="tel:03029260241" class="hover:text-timber font-bold">0302-9260241</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-white p-3.5 rounded-xl border border-beige-300 shadow-sm">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i>
+                            <div>
+                                <strong class="block text-charcoal-900 font-bold">WhatsApp Direct Line:</strong>
+                                <a href="https://wa.me/923097700239" target="_blank" class="hover:text-emerald-600 font-bold">0309-7700239</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-white p-3.5 rounded-xl border border-beige-300 shadow-sm">
+                            <i class="fa-regular fa-clock text-timber text-base"></i>
+                            <div>
+                                <strong class="block text-charcoal-900 font-bold">Working Hours:</strong>
+                                Saturday - Thursday: 9:00 AM - 9:00 PM (Friday: Workshop Closed)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links as requested -->
+                    <div class="pt-2">
+                        <p class="text-xs uppercase tracking-wider font-bold text-charcoal-700 mb-3">Connect On Social Media:</p>
+                        <div class="flex items-center gap-3">
+                            <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-white border border-beige-300 flex items-center justify-center text-charcoal-800 hover:bg-charcoal-900 hover:text-white transition shadow-sm" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f text-sm"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-white border border-beige-300 flex items-center justify-center text-charcoal-800 hover:bg-charcoal-900 hover:text-white transition shadow-sm" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram text-sm"></i>
+                            </a>
+                            <a href="https://tiktok.com" target="_blank" class="w-10 h-10 rounded-full bg-white border border-beige-300 flex items-center justify-center text-charcoal-800 hover:bg-charcoal-900 hover:text-white transition shadow-sm" aria-label="TikTok">
+                                <i class="fa-brands fa-tiktok text-sm"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" class="w-10 h-10 rounded-full bg-white border border-beige-300 flex items-center justify-center text-charcoal-800 hover:bg-charcoal-900 hover:text-white transition shadow-sm" aria-label="YouTube">
+                                <i class="fa-brands fa-youtube text-sm"></i>
+                            </a>
+                            <a href="https://pinterest.com" target="_blank" class="w-10 h-10 rounded-full bg-white border border-beige-300 flex items-center justify-center text-charcoal-800 hover:bg-charcoal-900 hover:text-white transition shadow-sm" aria-label="Pinterest">
+                                <i class="fa-brands fa-pinterest text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct Instant WhatsApp Form -->
+                <div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-beige-300 shadow-xl">
+                    <span class="text-timber uppercase tracking-[0.2em] text-xs font-bold block mb-1">Instant Measurement & Quote</span>
+                    <h3 class="text-2xl font-serif font-bold text-charcoal-900">Send Direct Project Inquiry</h3>
+                    <p class="text-xs text-charcoal-600 mt-1 mb-6">Fill in details below and it will open directly in WhatsApp for quick cost estimation.</p>
+
+                    <form id="inquiryForm" class="space-y-4" onsubmit="sendToWhatsApp(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1.5">Your Name</label>
+                                <input type="text" id="custName" required placeholder="e.g. Ahmad Khan" class="w-full text-xs px-3.5 py-3 rounded-xl border border-beige-300 focus:outline-none focus:border-timber bg-beige-50/50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1.5">Contact Number</label>
+                                <input type="tel" id="custPhone" required placeholder="0300-1234567" class="w-full text-xs px-3.5 py-3 rounded-xl border border-beige-300 focus:outline-none focus:border-timber bg-beige-50/50">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1.5">Required Service / Collection</label>
+                                <select id="custService" class="w-full text-xs px-3.5 py-3 rounded-xl border border-beige-300 focus:outline-none focus:border-timber bg-beige-50/50 text-charcoal-800">
+                                    <option value="Modular Kitchen (UV / Deco / Solid)">Modular Kitchen (UV / Deco / Solid)</option>
+                                    <option value="Luxury Wardrobes / Closets">Luxury Wardrobes / Closets</option>
+                                    <option value="Solid & Flush Doors">Solid & Flush Doors</option>
+                                    <option value="Wall Mouldings & Wainscoting">Wall Mouldings & Wainscoting</option>
+                                    <option value="Media Wall / TV Console">Media Wall / TV Console</option>
+                                    <option value="Bed Wall Accent Paneling">Bed Wall Accent Paneling</option>
+                                    <option value="Custom Home Furniture">Custom Home Furniture</option>
+                                    <option value="Corporate Office Interior">Corporate Office Interior</option>
+                                    <option value="Furniture Polish & Maintenance">Furniture Polish & Maintenance</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1.5">House / Project Location</label>
+                                <input type="text" id="custCity" placeholder="e.g. Model Town / Haidar Colony / Bahawalpur" class="w-full text-xs px-3.5 py-3 rounded-xl border border-beige-300 focus:outline-none focus:border-timber bg-beige-50/50">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-charcoal-700 uppercase tracking-wider mb-1.5">Project Details / Measurements</label>
+                            <textarea id="custMessage" rows="3" placeholder="Tell us sizes (approx feet), finish preference (Deco, UV, Polish, Laminate), or requirements..." class="w-full text-xs px-3.5 py-3 rounded-xl border border-beige-300 focus:outline-none focus:border-timber bg-beige-50/50"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-charcoal-900 text-beige-100 hover:bg-emerald-700 text-xs font-bold uppercase tracking-wider transition-all shadow-lg flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Send To WhatsApp (0309-7700239)
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-900 text-beige-200 pt-16 pb-12 border-t border-charcoal-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-charcoal-700/60">
+                
+                <!-- Brand Info -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-10 h-10">
+                            <svg viewBox="0 0 100 100" class="w-full h-full text-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 48 L 50 20 L 78 44" stroke-width="3.5"/>
+                                <path d="M 24 50 V 78 L 82 78" stroke-width="3"/>
+                                <path d="M 33 58 V 74" stroke-width="2.8"/>
+                                <path d="M 52 76 L 76 76 Q 80 72 78 66 L 74 66 L 68 56 L 64 64 L 54 68 Z" stroke-width="2.2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-cursive text-2xl text-white block leading-tight">Master Carpenter</span>
+                            <span class="font-serif text-[9px] tracking-widest text-beige-400 block -mt-1">I N T E R I O R</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-beige-300 leading-relaxed">
+                        Bahawalpur's benchmark for bespoke woodworking, high-gloss UV cabinetry, and royal residential fit-outs.
+                    </p>
+                </div>
+
+                <!-- Collections -->
+                <div>
+                    <h4 class="font-serif text-sm font-bold text-white uppercase tracking-wider mb-4">Top Collections</h4>
+                    <ul class="space-y-2 text-xs text-beige-300">
+                        <li><a href="#kitchens" class="hover:text-amber-400 transition">Modular Kitchens</a></li>
+                        <li><a href="#wardrobes" class="hover:text-amber-400 transition">Glass & Deco Wardrobes</a></li>
+                        <li><a href="#doors" class="hover:text-amber-400 transition">Solid Carved Doors</a></li>
+                        <li><a href="#mouldings" class="hover:text-amber-400 transition">Wall Paneling & Louvers</a></li>
+                    </ul>
+                </div>
+
+                <!-- More Links -->
+                <div>
+                    <h4 class="font-serif text-sm font-bold text-white uppercase tracking-wider mb-4">Interiors & Care</h4>
+                    <ul class="space-y-2 text-xs text-beige-300">
+                        <li><a href="#media-walls" class="hover:text-amber-400 transition">Luxury Media Walls</a></li>
+                        <li><a href="#bed-walls" class="hover:text-amber-400 transition">Fluted Bed Walls</a></li>
+                        <li><a href="#office" class="hover:text-amber-400 transition">Office Executive Furniture</a></li>
+                        <li><a href="#renewing" class="hover:text-amber-400 transition">Repolish & Restoration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Summary -->
+                <div>
+                    <h4 class="font-serif text-sm font-bold text-white uppercase tracking-wider mb-4">Bahawalpur Studio</h4>
+                    <p class="text-xs text-beige-300 leading-relaxed mb-3">
+                        Haidar Colony, State City Road, Bahawalpur.
+                    </p>
+                    <p class="text-xs text-beige-300">
+                        <strong class="text-white">Call:</strong> 0302-9260241<br>
+                        <strong class="text-white">WhatsApp:</strong> 0309-7700239
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[11px] text-beige-400 gap-4">
+                <p>© 2026 Master Carpenter and Interior. All rights reserved.</p>
+                <p>Designed with passion for master craftsmanship & royal interiors.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Quick Action Buttons (Bottom Right) -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- Direct Phone Call Button -->
+        <a href="tel:03029260241" title="Call Master Carpenter" class="w-13 h-13 p-3.5 bg-charcoal-900 text-white rounded-full shadow-2xl hover:scale-110 hover:bg-timber transition-all duration-300 flex items-center justify-center border-2 border-beige-300">
+            <i class="fa-solid fa-phone text-lg"></i>
+        </a>
+        <!-- WhatsApp Quick Chat Button -->
+        <a href="https://wa.me/923097700239?text=Assalam-o-Alaikum%20Master%20Carpenter,%20mujhe%20interior%20work%20k%20barey%20me%20inquiry%20karni%20hai" target="_blank" title="Chat on WhatsApp" class="w-14 h-14 p-3 bg-emerald-600 text-white rounded-full shadow-2xl hover:scale-110 hover:bg-emerald-500 transition-all duration-300 flex items-center justify-center border-2 border-white animate-bounce">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 3D Card Interactive Tilt on Mouse Move
+        const cards = document.querySelectorAll('.card-3d');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = ((y - centerY) / centerY) * -6; // Max 6 deg
+                const rotateY = ((x - centerX) / centerX) * 6;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+            });
+        });
+
+        // Direct WhatsApp Form Handler
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const service = document.getElementById('custService').value;
+            const city = document.getElementById('custCity').value.trim() || 'Bahawalpur';
+            const message = document.getElementById('custMessage').value.trim();
+
+            const text = `*New Interior Inquiry - Master Carpenter & Interior*\n\n` +
+                         `*Name:* ${name}\n` +
+                         `*Phone:* ${phone}\n` +
+                         `*Required Work:* ${service}\n` +
+                         `*Location:* ${city}\n` +
+                         `*Project Details:* ${message || 'Please provide catalog and estimate'}\n\n` +
+                         `_Sent via mastercarpenter.pk website_`;
+
+            const encoded = encodeURIComponent(text);
+            const waUrl = `https://wa.me/923097700239?text=${encoded}`;
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
+```
